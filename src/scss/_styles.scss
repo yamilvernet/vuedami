@@ -1,0 +1,104 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+$headings: 1 2 3 4 5 6;
+
+@each $h in $headings {
+  h#{$h} {
+    font-weight: bold;
+    @extend .mb-3;
+  }
+}
+
+$multipliers: 2 3 4;
+$sizes: 8 12 16 24;
+
+// Itera sobre los múltiplos y tamaños para generar las clases
+@each $multiplier in $multipliers {
+  @each $size in $sizes {
+    .sqr-#{$multiplier * $size} {
+      width: $multiplier * $size + px;
+      height: $multiplier * $size + px;
+    }
+  }
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.pointer { cursor: pointer }
+.fit-cover { object-fit: cover }
+
+.bg-primary-subtle {
+  background-color: #fffcf7 !important;
+  color: #4f3504 !important;
+}
+
+@media (min-width: 576px) {
+  .mt-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+}
+
+/**
+* 
+*
+*/
+
+.badge-argentina {
+  background-color: #f1f8ff;
+  color: #226fb5;
+  font-size: 1rem;
+}
+
+/**
+* Header and nav
+**/
+
+.header-text-logo {
+  font-size: 1.1rem;
+  margin-left: .5rem;
+  margin-bottom: 0 !important;
+  font-weight: 400;
+}
+
+.header-logo-img {
+  width: 32px;
+}
+
+.header-nav-wpp {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #25d366;
+}
+
+.flex-button-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+  .header-logo-img {
+    width: 52px;
+  }
+  .header-text-logo {
+    font-size: 1.5rem;
+  }
+  .flex-button-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+@media (min-width: 576px) {
+  .header-logo-img {
+    width: 42px;
+  }
+}
+
+/* end header nav */

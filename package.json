@@ -1,0 +1,35 @@
+{
+  "name": "vue-start",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@paypal/paypal-js": "^8.2.0",
+    "@popperjs/core": "^2.11.8",
+    "@tabler/icons-vue": "^3.31.0",
+    "@vuepic/vue-datepicker": "^11.0.2",
+    "axios": "^1.8.3",
+    "bootstrap": "^5.3.3",
+    "dompurify": "^3.3.3",
+    "jspdf": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "markdown-it": "^14.1.0",
+    "marked": "^18.0.0",
+    "pinia": "^3.0.1",
+    "qrcode.vue": "^3.6.0",
+    "sass": "^1.85.1",
+    "sitemap-generator": "^8.5.1",
+    "swiper": "^11.2.5",
+    "vue": "^3.5.13",
+    "vue-router": "^4.2.4",
+    "vue3-select-component": "^0.11.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.6"
+  }
+}

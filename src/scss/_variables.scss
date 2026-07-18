@@ -1,0 +1,62 @@
+// Colores personalizados
+$primary: #FCA500;
+$secondary: white;
+$success: #2be66f;
+$warning: #ffc107; // Puedes personalizar este también si es necesario.
+$danger: #dc5635;  // O mantener los valores predeterminados de Bootstrap.
+$info: #17a2b8;
+$light: rgb(244, 251, 246);
+$muted: #1c1a1a;
+
+// Extender el mapa de colores de Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "info": $info,
+  "light":$light,
+  "muted":$muted
+);
+
+// $secondary: #fae800;
+// $secondary-text: color-contrast($secondary); // Genera automáticamente blanco o negro dependiendo del contraste.
+
+// .btn-secondary {
+//   color: $secondary-text !important;
+// }
+
+
+// $bs-heading-color: #290e00;
+// $heading-color: red;
+
+
+
+
+// $secondary-hover: darken($secondary, 10%);
+// $secondary-focus: lighten($secondary, 10%);
+// $secondary-active: darken($secondary, 20%);
+
+// $text-color: #290e00;
+// $--bs-body-color:$text-color;
+$body-color: #290e00;
+
+// $--bs-body-color:$text
+// Otros estilos personalizados
+$border-radius: .75rem;
+$--vs-border-radius: 4px;
+
+$btn-border-radius: 1.25rem;
+$btn-border-radius-sm: 1.25rem;
+
+// // Container
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 640px,
+//   lg: 760px,
+//   xl: 840px,
+//   xxl: 960px
+// );
+
+

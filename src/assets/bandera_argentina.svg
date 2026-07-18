@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group">
+    <path id="Rectangle" d="M11 0C13.7618 0 16 2.2382 16 5L16 11C16 13.7618 13.7618 16 11 16L5 16C2.2382 16 0 13.7618 0 11L0 5C0 2.2382 2.2382 0 5 0L11 0Z" fill="#75AADB" />
+    <rect id="Rectangle" width="16" height="6" fill="#FFFFFF" fill-rule="evenodd" transform="translate(0 5)" />
+    <path id="Oval" d="M0 2.5C0 1.11929 1.11929 0 2.5 0C3.88071 0 5 1.11929 5 2.5C5 3.88071 3.88071 5 2.5 5C1.11929 5 0 3.88071 0 2.5Z" fill="#EEAA46" fill-rule="evenodd" transform="translate(5.5 5.5)" />
+  </g>
+</svg>

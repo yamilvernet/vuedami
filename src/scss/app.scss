@@ -1,0 +1,17 @@
+/* Bootstrap override and core variables */
+@import '_variables';
+
+/* Bootstrap extended classes */
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+/* Bootstrap extended classes */
+@import '_extend';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+/* Web Page styles */
+@import '_styles';
+
+html {
+    font-size:15px;
+}

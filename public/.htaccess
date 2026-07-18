@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  # Redirigir todas las solicitudes a /my-server/create-paypal-order al script PHP
+  RewriteCond %{REQUEST_URI} ^/create-paypal-order [NC]
+  RewriteRule ^(.*)$ create_paypal_order.php [L,QSA]
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

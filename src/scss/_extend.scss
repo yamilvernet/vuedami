@@ -1,0 +1,150 @@
+// own styles
+.d-flex-center-between {
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+}
+
+.d-flex-start-between {
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .align-items-start;
+}
+
+.d-flex-center-start {
+    @extend .d-flex;
+    @extend .justify-content-start;
+    @extend .align-items-center;
+}
+
+.d-flex-center-center {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+
+.d-flex-center-end {
+    @extend .d-flex;
+    @extend .justify-content-end;
+    @extend .align-items-center;
+}
+
+.d-flex-end-start {
+    @extend .d-flex;
+    @extend .justify-content-start;
+    @extend .align-items-end;
+}
+
+.d-flex-start-center {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-start;
+}
+
+.d-flex-start-end {
+    @extend .d-flex;
+    @extend .justify-content-end;
+    @extend .align-items-start;
+}
+
+.d-flex-end-between {
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .align-items-end;
+}
+
+
+
+
+
+
+
+.d-flex-center-center-md-start {
+  @extend .d-flex-center-center;
+}
+
+@media (min-width: 768px) {
+  .d-flex-center-center-md-start {
+    justify-content: start;
+  }
+}
+
+.d-flex-start-d-flex-lg-end {
+    @extend .d-flex-center-start;
+}
+
+@media (min-width:996px){
+    .d-flex-start-d-flex-lg-end {
+        justify-content: end !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+.fit-cover {
+    object-fit: cover;
+}
+
+.fs-5-md-4 {
+    font-size: 1rem;
+}
+
+.fs-6-md-5 {
+    font-size:1rem;
+}
+
+@media (min-width:768px){
+    .fs-5-md-4 {
+        font-size: 1.2rem !important;
+    }
+
+    .fs-6-md-5 {
+        font-size:1.2rem !important;
+    }
+}
+
+.wh-100{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+ * secondary Colour
+ */
+
+// .bg-secondary {
+//     background-color: $secondary;
+//     color: darken($primary, 20%);
+// }
+
+// .text-secondary {
+//     color: $secondary;
+// }
+
+// .btn-secondary {
+//     background-color: $secondary;
+//     border-color: $secondary;
+//     color: darken($primary, 13%);
+
+//     &:hover {
+//         background-color: $secondary-hover;
+//         border-color: $secondary-hover;
+//     }
+
+//     &:focus {
+//         background-color: $secondary-focus;
+//         border-color: $secondary-focus;
+//     }
+
+//     &:active {
+//         background-color: $secondary-active;
+//         border-color: $secondary-active;
+//     }
+// }
