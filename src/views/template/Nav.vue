@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container py-3">
         <div class="bg-white rounded p-3">
             <div class="row g-0 align-items-center">
                 <div class="col-12 col-sm-6 col-lg-4 order-0 my-1">
@@ -14,7 +14,8 @@
                         <span class="">{{ ENV.WPP_PHONE_NUMBER_FORMATTED }}</span>
                     </a>
                     &nbsp;
-                    <a :href="'tel:'+ENV.PHONE_NUMBER" class="header-nav-wpp" style="color: rgb(60, 68, 184);">
+                    &nbsp;
+                    <a :href="'tel:'+ENV.PHONE_NUMBER" class="header-nav-wpp d-inline d-md-none d-lg-inline" style="color: rgb(60, 68, 184);">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" size="18" style="vertical-align: center;" class="tabler-icon tabler-icon-phone me-1"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path></svg>
                         <span class="">{{ ENV.PHONE_NUMBER_FORMATTED }}</span>
                     </a>

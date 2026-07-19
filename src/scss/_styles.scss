@@ -24,12 +24,26 @@ $sizes: 8 12 16 24;
   }
 }
 
+/**
+* Global styles
+*/
+
 .btn {
   font-weight: bold;
+  border-radius: 1.25rem;
+}
+
+.btn-primary {
+  color: white !important;
 }
 
 .pointer { cursor: pointer }
 .fit-cover { object-fit: cover }
+
+.list-none {
+  list-style: none;
+  padding-left: 0;
+}
 
 .bg-primary-subtle {
   background-color: #fffcf7 !important;
@@ -43,7 +57,7 @@ $sizes: 8 12 16 24;
 }
 
 /**
-* 
+* Components
 *
 */
 
@@ -102,3 +116,35 @@ $sizes: 8 12 16 24;
 }
 
 /* end header nav */
+
+/**
+* Home
+*/
+
+.hero {
+  background-image: url('/images/hero_background_sm.webp');
+  background-size: cover;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.review-content {
+  font-size: 1.12rem;
+  font-style: italic;
+  margin-bottom: .5rem;
+  margin-top: .25rem;
+  font-weight: 700;
+}
+
+
+/* end Home */

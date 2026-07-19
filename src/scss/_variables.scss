@@ -5,7 +5,7 @@ $success: #2be66f;
 $warning: #ffc107; // Puedes personalizar este también si es necesario.
 $danger: #dc5635;  // O mantener los valores predeterminados de Bootstrap.
 $info: #17a2b8;
-$light: rgb(244, 251, 246);
+$light: #fafafa;
 $muted: #1c1a1a;
 
 // Extender el mapa de colores de Bootstrap
@@ -41,6 +41,7 @@ $theme-colors: (
 // $text-color: #290e00;
 // $--bs-body-color:$text-color;
 $body-color: #290e00;
+$headings-color: #4f3504;
 
 // $--bs-body-color:$text
 // Otros estilos personalizados
