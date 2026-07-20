@@ -189,11 +189,7 @@
         </p>
     </section>
 
-
-
-
-
-
+    <ProductsList/>
 </template>
 <script setup>
 import Nav from './template/Nav.vue';
@@ -202,6 +198,7 @@ import { Carousel, Slide } from 'vue3-carousel'
 import { de_slugify } from '../utils.js';
 import { ref } from 'vue';
 import HeaderSection from './template/HeaderSection.vue';
+import ProductsList from '../components/ProductsList.vue';
 
 const carouselConfig = {
   itemsToShow: 1,

@@ -1,1 +1,4 @@
 node_modules
+/public/educational_videos
+/public/manuales
+/public/videos

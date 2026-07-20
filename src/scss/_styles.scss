@@ -67,6 +67,15 @@ $sizes: 8 12 16 24;
   font-size: 1rem;
 }
 
+/* product card */
+
+.product-article-image {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: white;
+}
+
 /**
 * Header and nav
 **/
@@ -148,3 +157,46 @@ $sizes: 8 12 16 24;
 
 
 /* end Home */
+
+/**
+* Product View
+*/
+
+.carousel {
+  --vc-nav-background: rgba(0, 0, 0, 0.3);
+  --vc-nav-color: white;
+  --vc-nav-color-hover: #e5e5e5;
+  --vc-nav-border-radius: 50%;
+  --vc-nav-width: 40px;
+  --vc-nav-height: 40px;
+
+  --vc-pgn-background-color: rgb(199, 199, 199);
+  --vc-pgn-active-color: rgb(236, 36, 36);
+  --vc-pgn-border-radius: 100%;
+  --vc-pgn-height: 10px;
+  --vc-pgn-width: 10px;
+}
+
+.product-gallery-image {
+  width: 90%;
+  height: 320px;
+  object-fit: contain;
+}
+
+/* end product view */
+
+/**
+* Help view
+*/
+
+.video-container {
+  background: #000;
+  padding: 4px;
+}
+
+.video-container video {
+  height: 280px;
+  object-fit: contain;
+}
+
+/* help view */
