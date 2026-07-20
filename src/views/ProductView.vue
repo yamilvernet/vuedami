@@ -24,8 +24,8 @@
                         <p>Incubadora y nacedora profesional para todo tipo de huevos. Con capacidad de {{product.capacity}} huevos.</p>
                         <div class="fs-1 fw-bold text-primary" itemprop="price">{{product_price}}</div>
                         <ul class="list-unstyled small mt-2">
-                            <li>💵 En efectivo o depósito bancario</li>
-                            <li>🚚 Enviamos con normalidad a todo el país.</li>
+                            <li>En efectivo o depósito bancario</li>
+                            <li><IconTruckFilled size="14"/> Enviamos con normalidad a todo el país.</li>
                         </ul>
                         <a class="btn btn-primary w-100 mt-2" :href="whatsapp_url" target="_blank">Consultar por Whatsapp ahora</a>
                     </div>
@@ -39,19 +39,19 @@
                 <div class="bg-danger-subtle text-danger-emphasis p-3 pt-4 text-center-md-left">
                     <h3 class="fs-5 mb-3">No todas las incubadoras dan buenos resultados</h3>
                     <ul class="list-none fs-6-md-5 text-center-md-left">
-                        <li><span>Animales que pican el huevo y no pueden nacer</span></li>
-                        <li><span>Embriones que no se desarrollan</span></li>
-                        <li><span>Nacimientos desparejos</span></li>
-                        <li><span>Animales que caminan mal y no logran sobrevivir</span></li>
+                        <li><IconCircleXFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Animales que pican el huevo y no pueden nacer</span></li>
+                        <li><IconCircleXFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Embriones que no se desarrollan</span></li>
+                        <li><IconCircleXFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Nacimientos desparejos</span></li>
+                        <li><IconCircleXFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Animales que caminan mal y no logran sobrevivir</span></li>
                     </ul>
                 </div>
                 <div class="bg-success-subtle text-success-emphasis p-3 pt-4 text-center-md-left">
                     <h3 class="fs-5 mb-3">Con ADAMI, los resultados son distintos</h3>
                     <ul class="list-none fs-6-md-5 text-center-md-left">
-                        <li><span>Temperatura siempre precisa</span></li>
-                        <li><span>Humedad controlada</span></li>
-                        <li><span>Funcionamiento confiable</span></li>
-                        <li><span>Le enseñamos todo lo que necesite</span></li>
+                        <li><IconCircleCheckFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Temperatura siempre precisa</span></li>
+                        <li><IconCircleCheckFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Humedad controlada</span></li>
+                        <li><IconCircleCheckFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Funcionamiento confiable</span></li>
+                        <li><IconCircleCheckFilled size="22" style="vertical-align: center;" class="me-1"/> <span>Le enseñamos todo lo que necesite</span></li>
                     </ul>
                 </div>
             </div>
@@ -100,35 +100,7 @@
 
         <BirthTable v-if="product.capacity==70||product.capacity==120" :machine_capacity="product.capacity"/>
 
-        <section class="container my-5 text-center">
-            <h2>
-                Sabemos cómo incubar
-                <br />
-                <span class="text-primary">aves en cada clima de la gran Argentina</span>
-            </h2>
-            <p>Lo ayudamos a incubar para que consigas hasta un 95% de nacimientos desde el primer día.</p>
-            <div class="row">
-                <div class="col-12 col-md-6 mb-3">
-                <div class="h-100 bg-primary bg-primary-subtle text-primary-emphasis d-flex-start-between p-3 rounded">
-                    <div class="text-start">
-                    <div class="text-primary"></div>
-                    <p class="review-content">"Humedad estable, temperatura estable: La mejor inversión que hice."</p>
-                    <small>9 de Julio, Misiones</small>
-                    </div>
-                </div>
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                <div class="h-100 bg-primary bg-primary-subtle text-primary-emphasis p-3 rounded">
-                    <div class="text-start">
-                    <div class="text-primary"></div>
-                    <p class="review-content">"Llego perfecto como siempre, mi tercera incubadora ADAMI."</p>
-                    <small>Navarro, Buenos Aires</small>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <a href="/opiniones-incubadoras-de-huevos">Ver todos los comentarios</a>
-        </section>
+        <ReviewSection/>
 
 
 
@@ -144,7 +116,8 @@ import { useRoute } from 'vue-router';
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import BirthTable from '../components/BirthTable.vue';
-import { IconBellRinging, IconCircleCheck, IconDroplet, IconEgg, IconRefresh, IconRuler, IconShield, IconTemperature } from '@tabler/icons-vue';
+import { IconBellRinging, IconCircleCheck, IconCircleCheckFilled, IconCircleXFilled, IconDroplet, IconEgg, IconRefresh, IconRuler, IconShield, IconTemperature, IconTruckFilled } from '@tabler/icons-vue';
+import ReviewSection from '../components/ReviewSection.vue';
 
 
 // get product

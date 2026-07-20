@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconFileTypePdf, IconStarFilled } from '@tabler/icons-vue';
+import { IconStarFilled } from '@tabler/icons-vue';
 import HeaderSection from './template/HeaderSection.vue';
 import { get_whatsapp_url } from '../utils.js';
 import { ENV } from '../env.js';
@@ -23,9 +23,6 @@ const handleEnded = (event) => {
     currentVideo.value = null;
   }
 };
-
-
-
 </script>
 
 <template>
@@ -46,9 +43,9 @@ const handleEnded = (event) => {
                     <div  class="rounded bg-primary-subtle text-primary-emphasis p-3">
                         <div class="text-primary d-flex-center-start mb-2">
                             <IconStarFilled size="16" v-for="a in 5"/>
-                            </div>
-                            <h3 class="fs-5 mb-1">{{ review.title }}</h3>
-                            <p><IconMapPinFilled size="16" style="vertical-align: center;"/> {{ review.location }}</p>
+                        </div>
+                        <h3 class="fs-5 mb-1">{{ review.title }}</h3>
+                        <p><IconMapPinFilled size="16" style="vertical-align: center;"/> {{ review.location }}</p>
                         <div class="video-container rounded d-flex-center-center">
                             <video
                                 :src="review.video_url"

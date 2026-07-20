@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { IconBrandWhatsappFilled, IconMapPinFilled, IconTruckFilled } from '@tabler/icons-vue';
+import { ENV } from '../../env';
+import { get_whatsapp_url } from '../../utils';
+import { computed } from 'vue';
+
+const whatsapp_url = computed(()=>{
+  return get_whatsapp_url(ENV.WPP_PHONE_NUMBER,"Hola Adami! Estoy interesado en las incubadoras")
+});
+</script>
+
 <template>
     <div class="bg-light text-primary-emphasis mt-5 py-3">
         <div class="container text-center">
@@ -17,27 +28,28 @@
                 <h5 class="fs-bold">Contacto</h5>
                 <a
                 class="text-decoration-none d-block text-primary-emphasis"
-                href="https://api.whatsapp.com/send?phone=5491168066775&amp;text=Hola Adami! Estoy interesado en las incubadoras"
+                :href="whatsapp_url"
                 target="_blank"
                 >
-                11 6806-6775
+                <IconBrandWhatsappFilled size="18" style="vertical-align: center;"/>
+                {{ENV.WPP_PHONE_NUMBER_FORMATTED}}
                 </a>
                 <a
                 class="text-decoration-none d-block text-primary-emphasis"
-                href="https://api.whatsapp.com/send?phone=5491168066775&amp;text=Hola Adami! Estoy interesado en las incubadoras"
+                :href="'tel:'+ENV.PHONE_NUMBER"
                 target="_blank"
                 >
-                011 4566-3484
+                {{ENV.PHONE_NUMBER_FORMATTED}}
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4 my-2 text-center">
                 <h5 class="fs-bold">Ubicación</h5>
-                <div>Nogoya 5159, Capital Federal.</div>
-                <div>Envíos a todo el país.</div>
+                <div><IconMapPinFilled size="18" style="vertical-align: center;"/> Nogoya 5159, Capital Federal.</div>
+                <div><IconTruckFilled size="18" style="vertical-align: center;"/> Envíos a todo el país.</div>
             </div>
             </div>
             <a
-            href="https://api.whatsapp.com/send?phone=5491168066775&amp;text=Hola Adami! Estoy interesado en las incubadoras"
+            :href="whatsapp_url"
             target="_blank"
             class="btn btn-primary my-2"
             >

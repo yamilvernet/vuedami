@@ -30,7 +30,7 @@
     <div class="container my-4">
         <div class="grid-wrapper">
             <div class="bg-danger-subtle text-danger-emphasis p-3 pt-4 text-center-md-left" style="background: rgb(255, 247, 233) !important">
-                <div class="fs-2 fw-bold">Atención</div>
+                <div class="fs-2 fw-bold"><IconExclamationCircleFilled style="vertical-align: center;"/> Atención</div>
                     <h3 class="fs-5 mb-3">No todas las incubadoras dan buenos resultados</h3>
                     <p>
                         Hemos visto
@@ -39,7 +39,7 @@
                     </p>
                 </div>
                 <div class="bg-success-subtle text-success-emphasis p-3 pt-4 text-center-md-left">
-                    <h3 class="fs-4 mb-3">Eligiendo incubadoras ADAMI</h3>
+                    <h3 class="fs-4 mb-3"><IconHeartHandshake style="vertical-align: center;"/> Eligiendo incubadoras ADAMI</h3>
                     <div class="bg-white rounded p-2">
                         <p class="my-2 mb-3">
                         No solo está comprando una incubadora con todos sus repuestos, sino también una incubadora testeada con
@@ -74,7 +74,7 @@
 
     <section class="bg-light-subtle text-light-emphasis my-5">
         <div class="container py-3 text-center">
-            <h2>Tecnología Argentina</h2>
+            <h2><IconCircleCheckFilled fill="#3f3ff3" style="vertical-align: center;"/> Tecnología Argentina</h2>
             <p>
             Aficionados y expertos eligen incubadoras ADAMI por sus exitosos nacimientos.
             <br />
@@ -103,35 +103,7 @@
     </section>
 
 
-    <section class="container my-5 text-center">
-        <h2>
-            Sabemos cómo incubar
-            <br />
-            <span class="text-primary">aves en los distintos climas de la gran Argentina</span>
-        </h2>
-        <p>Lo ayudamos a incubar para que consigas hasta un 95% de nacimientos desde el primer día.</p>
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3">
-            <div class="h-100 bg-primary-subtle text-primary-emphasis p-3 rounded">
-                <div class="text-start">
-                <div class="text-primary"></div>
-                <p class="review-content">"Me explicaron muy bien, estoy muy agradecido."</p>
-                <small>Alta Gracia, Córdoba</small>
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-            <div class="h-100 bg-primary-subtle text-primary-emphasis p-3 rounded">
-                <div class="text-start">
-                <div class="text-primary"></div>
-                <p class="review-content">"Humedad estable, temperatura estable: La mejor inversión que hice."</p>
-                <small>9 de Julio, Misiones</small>
-                </div>
-            </div>
-            </div>
-        </div>
-        <router-link to="opiniones-incubadoras-de-huevos">Ver todos los comentarios</router-link>
-    </section>
+    <ReviewSection/>
 
     <section class="bg-light my-5 py-4 text-center">
         <div class="container">
@@ -142,13 +114,13 @@
             </h2>
             <p>Aprenda a usar su incubadora de huevos automática desde el primer día.</p>
             <ul class="list-group text-start">
-            <li class="list-group-item">Guías y videos paso a paso.</li>
-            <li class="list-group-item">Resolvemos dudas reales</li>
-            <li class="list-group-item">Soporte por WhatsApp.</li>
-            <li class="list-group-item">Sabemos como incubar en cada clima de la gran Argentina.</li>
+            <li class="list-group-item"><IconVideoFilled size="22" fill="#3e3e3e"/> Guías y videos paso a paso.</li>
+            <li class="list-group-item"><IconHelpCircleFilled size="22" fill="#3e3e3e"/> Resolvemos dudas reales</li>
+            <li class="list-group-item"><IconBrandWhatsappFilled size="22" fill="#3e3e3e"/> Soporte por WhatsApp.</li>
+            <li class="list-group-item"><IconCircleCheckFilled size="22" fill="#3e3e3e"/> Sabemos como incubar en cada clima de la gran Argentina.</li>
             </ul>
             <div class="d-flex-center-start ps-2 mt-3 text-success-emphasis">
-            <div></div>
+            <div><IconCircleCheckFilled style="vertical-align: center;"/></div>
             <p class="text-start mb-0 ms-2 fw-bold">
                 Esto es lo que hace la diferencia entre fallar o lograr buenos nacimientos.
             </p>
@@ -166,11 +138,11 @@
                     <span class="text-primary">Incubadoras de huevos ADAMI</span>
                 </h2>
                 <ul class="list-none fs-6-md-5">
-                    <li class="d-flex-center-start"><span>Temperatura y humedad configurable</span></li>
-                    <li class="d-flex-center-start"><span>Visualice temperatura y humedad</span></li>
-                    <li class="d-flex-center-start"><span>Volteo automático de huevos (configurable)</span></li>
-                    <li class="d-flex-center-start"><span>Alarma inteligente</span></li>
-                    <li class="d-flex-center-start"><span>Contador de días de incubación</span></li>
+                    <li class="d-flex-center-start mb-2"><IconTemperaturePlusFilled size="18" class="me-1 flex-shrink-0"/> <span>Temperatura y humedad configurable</span></li>
+                    <li class="d-flex-center-start mb-2"><IconEyeFilled size="18" class="me-1 flex-shrink-0"/> <span>Visualice temperatura y humedad</span></li>
+                    <li class="d-flex-center-start mb-2"><IconRefresh stroke="3" size="18" class="me-1 flex-shrink-0"/> <span>Volteo automático de huevos (configurable)</span></li>
+                    <li class="d-flex-center-start mb-2"><IconBellRingingFilled size="18" class="me-1 flex-shrink-0"/> <span>Alarma inteligente</span></li>
+                    <li class="d-flex-center-start mb-2"><IconCalendarFilled size="18" class="me-1 flex-shrink-0"/> <span>Contador de días de incubación</span></li>
                 </ul>
                 <p class="d-none d-md-block bg-success-subtle text-success-emphasis p-3 rounded mt-3 text-center fs-6-md-5">
                     Unicas con ajuste de temperatura cada 0.1°C real medido
@@ -199,6 +171,8 @@ import { de_slugify } from '../utils.js';
 import { ref } from 'vue';
 import HeaderSection from './template/HeaderSection.vue';
 import ProductsList from '../components/ProductsList.vue';
+import { IconBellRingingFilled, IconBrandWhatsappFilled, IconCalendarFilled, IconCircleCheckFilled, IconExclamationCircleFilled, IconEyeFilled, IconHeartHandshake, IconHelpCircleFilled, IconMapPinFilled, IconRefresh, IconStarFilled, IconTemperaturePlusFilled, IconVideoFilled } from '@tabler/icons-vue';
+import ReviewSection from '../components/ReviewSection.vue';
 
 const carouselConfig = {
   itemsToShow: 1,
